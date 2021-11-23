@@ -1,0 +1,85 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Qlair Dashboards</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'main/media/icons/qlair_favicon.png' %}">
+    <link href="{% static 'main/vendor/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link href="{% static 'main/css/hvac_dashboard.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+</head>
+<input id="imei" type="hidden" value="{{imei}}">
+<input id="dashboardID" type="hidden" value="{{dashboard_id}}">
+{% if dashboard_not_available %}
+<div class="centerScreen">
+    Dashboard Unavailable
+</div>
+{% else %}
+<div id="page">
+    <center>
+        {% if all_ahu %}
+        <div class="selectDiv">
+            <select class="selectText selectWidth custom-select" id="ahuSelect">
+                {% for imei, ahu in imei_dict.items %}
+                    {% if ahu == ahu_name %}
+                        <option class="selectText" value="{{imei}}" selected>{{ahu}}</option>
+                    {% else %}
+                        <option class="selectText" value="{{imei}}">{{ahu}}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        {% endif %}
+        {% for stage in stages %}
+            <button class="btn btn-primary button-tag" id="stageButton{{forloop.counter}}">{{stage}}</button>
+        {% endfor %}
+    </center>
+    <div class="topPad">
+        <center>
+            <div class="squareBorder">
+                <br>
+                <h1 class="autoH1">{{ahu_name}}</h1>
+                <h2 class="autoH2" id="selectedStageName">{{stage}}</h2>
+                <div class="gauge-example">
+                    <div>
+                        <div id="pressureGauge" class="gauge" style="--gauge-value:0;">
+                            <div class="ticks">
+                                <div class="tithe" style="--gauge-tithe-tick:1;"></div>
+                                <div class="tithe" style="--gauge-tithe-tick:2;"></div>
+                                <div class="tithe" style="--gauge-tithe-tick:3;"></div>
+                                <div class="tithe" style="--gauge-tithe-tick:4;"></div>
+                                <div class="tithe" style="--gauge-tithe-tick:6;"></div>
+                                <div class="tithe" style="--gauge-tithe-tick:7;"></div>
+                                <div class="tithe" style="--gauge-tithe-tick:8;"></div>
+                                <div class="tithe" style="--gauge-tithe-tick:9;"></div>
+                                <div class="min"></div>
+                                <div class="mid"></div>
+                                <div class="max"></div>
+                            </div>
+                            <div class="tick-circle"></div>
+                            <div class="needle">
+                                <div class="needle-head"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 class="autoH1"><span id="pressureDeltaValue"></span></h2>
+                        <h3>Inches Water Gauge</h3>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <div class="lastMeasurement">
+            Last Measurement: <span id="lastMeasurementTime"></span>
+        </div>
+    </div>
+</div>
+<div id="loading"></div>
+{% endif %}
+<img src="{% static 'main/media/icons/qlair_blue.png' %}" class="qlairLogo">
+<script src="{% static 'main/javascript/hvac_dashboard.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'main/vendor/js/bootstrap.bundle.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>

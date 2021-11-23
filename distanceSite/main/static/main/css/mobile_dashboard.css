@@ -1,0 +1,97 @@
+body {
+    height: 90vh;
+}
+.headerFont {color: black;}
+.icon {width: 4.5vh; padding-left: .5vh; padding-top:2vh;}
+.iconText {color: black; font-size: 2vh;}
+.valueText {color: black; font-size: 3vh;}
+.outdoorBtnText {
+    width: 20vh;
+    color: white;
+    font-size: 2vh;
+    background-color: dodgerblue;
+    border-radius:24px;
+}
+.outdoorBtnText:hover {
+    color: black;
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.qlairLogo {width: 30vw; padding-top: 2vh;}
+.standardHR {color: rgb(100, 100, 100);}
+.facilityInfo {color: black; font-size: 1.2vw; position: absolute; left: 10px; bottom: 10px;}
+.selectStyle {float:left; bottom: 5vh; left: 5vw;}
+.autoH1 {font-size: 3vw; margin-top: 8vw; color:black;}
+.autoH2 {font-size: 2vw; padding-bottom: 1.5vw;  color:black;}
+.selectText {font-size: 2vh; text-align-last:center; }
+.hide {display: none;}
+.contentCenter {
+    padding-top: 6vh;
+}
+.selectWidth {width: 14vw; height: 3vw; border-radius:24px;}
+.pollutantClass {font-size: 4vh;}
+.selectedPoll {font-size: 2.5vh;}
+.scaleToPage {width: 10vw; height: 3vw;}
+@media only screen and (device-width: 768px) {
+  .topSpace {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+  }
+}
+@media only screen and (device-width: 1366px) {
+  .topSpace {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22vh;
+  }
+}
+.topSpace {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12vh;
+}
+.custom-select {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 24px;
+  max-width: 220px;
+}
+.selectText:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    font-size: 1vw;
+}
+.caption {
+    display: block;
+}
+.blur {
+    filter: blur(10px);
+}
+.centerScreen {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 35vh;
+    margin-left: 12vw;
+    font-size: 8vw;
+}
+.verticalCenter {
+    padding-top: 11vh;
+    padding-bottom: 11vh;
+}
+.sunSizing {
+    width: 20vh;
+    height: 20vh;
+}
+.selectDiv {
+    padding-top: 3vh;
+    padding-left: 6vw;
+}
+.learnMore {
+    padding-top: 1vh;
+    font-size: 5vw;
+}

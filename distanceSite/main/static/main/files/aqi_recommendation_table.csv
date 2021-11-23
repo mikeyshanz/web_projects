@@ -1,0 +1,90 @@
+,,Recommendation OFFICE SPACES,
+,,General: during operating hours!,
+Pollutant,Total_AQI,,Action_Points
+Unit,Index ,Recommendation based on weekly average,
+Good,0-25,The overall air quality within the facility is excellent. The pollutant concentration within the monitored space is low. The space is offering a healthy environment for its occupants.,
+Good,26-50,The overall air quality within the facility is good. The pollutant concentration within the monitored space is low. The space is offering a healthy environment for its occupants.,
+Moderate,51-75,The overall air quality within the facility is moderate. The pollutant concentration within the monitored space is too high. The space is not offering a high productivity environment for offices and training facilities. A root cause analysis and mitigation strategy is recommended. ,
+Moderate,76-100,The overall air quality within the facility is moderate. The pollutant concentration within the monitored space is too high. The space is not offering a high productivity environment for offices and training facilities. The indoor air quality may cause health issues for sensitive groups. A root cause analysis and mitigation strategy is recommended.  ,
+Unhealthy for sensitive groups,101-150,The overall air quality within the facility is unhealthy for sensitive groups. The pollutant concentration within the monitored space is too high. The space is not offering a high productivity environment for offices and training facilities. The indoor air is likely to cause health issues for sensitive people. Long term exposure to the indoor air may also affect healthy people. Complications range from headaches and irritation to increased risk of cancer and disease. A root cause analysis and mitigation strategy is highly recommended. ,
+Unhealthy ,151-200,The overall air quality within the facility is unhealthy. The pollutant concentration within the monitored space is too high. The space is not offering a high productivity environment for offices and training facilities. The indoor air is likely to cause health issues for both sensitive groups and healthy people. Complications range from headaches and irritation to increased risk of cancer and disease. A root cause analysis and mitigation strategy is highly recommended. ,
+Very unhealthy,201-300,The overall air quality within the facility is very unhealthy. The pollutant concentration within the monitored space is too high. The space is not offering a high productivity environment for offices and training facilities. The indoor air is likely to cause health issues for both sensitive groups and healthy people. Complications range from headaches and irritation to increased risk of cancer and disease. A root cause analysis and mitigation strategy is highly recommended. ,
+Hazardous,301-1000,The overall air quality within the facility is HAZARDOUS. The pollutant concentration within the monitored space is too high. The space is not offering a high productivity environment for offices and training facilities. The indoor air is likely to cause health issues for both sensitive groups and healthy people. Complications range from headaches and irritation to increased risk of cancer and disease. A root cause analysis and mitigation strategy is highly recommended. ,
+,,,
+,,,
+Pollutant,cotwo,Recommendation based on weekly average,
+Unit,ppm,,
+Good,400-550,The CO2 level indicate activity and building usage. CO2 is used as the main indicator to determine if a building is over- or under-ventilated. The average CO2 levels are consistently below 550ppm. This indicates that the building is over-ventilated at some time of the day and energy could be saved. An audit on your ventilation setup is recommended. ,
+Good,550-700,The CO2 level indicate activity and building usage. CO2 is used as the main indicator to determine if a building is over- or under-ventilated. The average CO2 levels are consistently within the optimum range of 500 to 700 ppm. ,Detailed audit of ventilation setup to identify over-ventilation in specific areas or at specific times.
+Moderate,700-1000,The CO2 level indicate activity and building usage. CO2 is used as the main indicator to determine if a building is over- or under-ventilated. The average CO2 levels are above the optimum range of 500 to 650 ppm. The ventilation rates are not sufficient and an optimized ventilation schedule is recommended for occupant well-being. Complications for occupants include dizziness and fatigue.,Detailed audit of ventilation setup to identify over-ventilation in specific areas or at specific times.
+Moderate,1001-1500,The CO2 level indicate activity and building usage. CO2 is used as the main indicator to determine if a building is over- or under-ventilated. The average CO2 levels are well above the optimum range of 500 to 650 ppm. The ventilation rates are not sufficient and an optimized ventilation schedule is recommended for occupant well-being. Complications for occupants include dizziness and fatigue.,Detailed audit of ventilation setup to identify over-ventilation in specific areas or at specific times.
+Unhealthy for sensitive groups,1501-20000, The CO2 level indicate activity and building usage. CO2 is used as the main indicator to determine if a building is over- or under-ventilated. The average CO2 levels are well above the optimum range of 500 to 650 ppm. The ventilation rates are not sufficient and an optimized ventilation schedule is recommended for occupant well-being. Complications for occupants include dizziness and fatigue.,Detailed audit of ventilation setup to identify over-ventilation in specific areas or at specific times.
+,,,
+,,,
+Pollutant,pmtwo,Recommendation based on weekly average,
+Unit,ug/m3,,
+Good,0-10,"The overall indoor PM2.5 levels are excellent and indicate that your buildings filtration and purification is set up effectively. The average PM2.5 concentrations are low and the building fulfills LEED and RESET Green Building standards, as well as recommendations from the World Health Organization.",
+Good,10.0-12.0,The overall indoor PM2.5 levels are moderate. The average PM2.5 concentrations are low and the building fulfills LEED and RESET Green Building standards. The building does not fulfill the recommendations from the World Health Organization.,"Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+Moderate,12.1-35.4,"The average indoor PM2.5 levels are high. Occupant productivity and well-being will be affected negatively. A review of the existing filtration setup is recommended. The building does not fulfill Green Building standards like LEED and RESET, nor recommendations from the World Health Organization.","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+Unhealthy for sensitive groups,35.5-55.4,"The average indoor PM2.5 levels are unhealthy for sensitive groups. Occupant productivity and well-being will be affected negatively. A review of the existing filtration setup is recommended. The building does not fulfill Green Building standards like LEED and RESET, nor recommendations from the World Health Organization.","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+Unhealthy ,55.5-15000,"The average indoor PM2.5 levels are unhealthy. Occupant productivity and well-being will be affected negatively. A review of the existing filtration setup is recommended. The building does not fulfill Green Building standards like LEED and RESET, nor recommendations from the World Health Organization.","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+,,,
+,,,
+Pollutant,pmten,Recommendation based on weekly average,
+Unit,ug/m3,,
+Good,0-10,"The overall indoor PM10 levels are excellent and indicate that your buildings filtration and purification is set up effectively. The average PM10 concentrations are low and the building fulfills LEED and RESET Green Building standards, as well as recommendations from the World Health Organization.",
+Good,10-20,"The overall indoor PM10 levels are good and indicate that your buildings filtration and purification is set up effectively. The average PM10 concentrations are low and the building fulfills LEED and RESET Green Building standards, as well as recommendations from the World Health Organization.","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+Good,20-35,"The overall indoor PM10 levels are elevated. A review of the existing filtration setup is recommended. The building does not fulfill Green Building standards like LEED and RESET, nor recommendations from the World Health Organization. ","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+Good,36-54,"The overall indoor PM10 levels are elevated. A review of the existing filtration setup is recommended. The building does not fulfill Green Building standards like LEED and RESET, nor recommendations from the World Health Organization. ","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+Moderate,55-154,"The overall indoor PM10 levels are high. A review of the existing filtration setup is recommended. The building does not fulfill Green Building standards like LEED and RESET, nor recommendations from the World Health Organization. ","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+Unhealthy for sensitive groups,155-254,"The overall indoor PM10 levels are very high. Immediate action is required. A review of the existing filtration setup is recommended. The building does not fulfill Green Building standards like LEED and RESET, nor recommendations from the World Health Organization.","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+Unhealthy,255-15000,"The overall indoor PM10 levels are unhealthy. Immediate actions is required. A review of the existing filtration setup is recommended. The building does not fulfill Green Building standards like LEED and RESET, nor recommendations from the World Health Organization. ","Filtration Setup Check
+Indoor Pollution Source Inspection (PM)
+Retro-fit Solutions like air purifiers and ionization devices should be considered"
+,,,
+,,,
+Pollutant,voc,Recommendation based on weekly average,
+Unit,ppm,,
+Good,0-10,The average VOC levels in the space are excellent. A low concentration of chemicals in the indoor air is important for occupant well-being and performance.,
+Good,10.1-15,The average VOC levels in the space are good. A low concentration of chemicals in the indoor air is important for occupant well-being and performance.,"Further Monitoring of Individual Areas (VOC)
+Ventilation Check for Affected Areas (VOC)"
+Moderate,15.1-17,"The average VOC levels are moderate. A high concentration of chemicals in the indoor air can cause complications like dizziness and respiratory issues, affecting occupant well-being.","Further Monitoring of Individual Areas (VOC)
+Ventilation Check for Affected Areas (VOC)
+Retro-fit ionization solutions should be investigated"
+Moderate,17.7-25,"The average VOC levels are high. A high concentration of chemicals in the indoor air can cause complications like dizziness and respiratory issues, affecting occupant well-being.","Further Monitoring of Individual Areas (VOC)
+Ventilation Check for Affected Areas (VOC)
+Retro-fit ionization solutions should be investigated"
+Unhealthy for sensitive groups,25.1-50,"The average VOC levels are very high. Action is required. A high concentration of chemicals in the indoor air can cause complications like dizziness and respiratory issues, affecting occupant well-being.","Further Monitoring of Individual Areas (VOC)
+Ventilation Check for Affected Areas (VOC)
+Retro-fit ionization solutions should be investigated"
+Unhealthy,50.1-75,"The average VOC levels are unhealthy. Immediate action is required. A high concentration of chemicals in the indoor air can cause complications like dizziness and respiratory issues, affecting occupant well-being.","Further Monitoring of Individual Areas (VOC)
+Ventilation Check for Affected Areas (VOC)
+Retro-fit ionization solutions should be investigated"
+,,,
+,,,
+Pollutant,form,Recommendation based on weekly average,
+Unit,ppm,,
+Good,0 - 0.2,This is a normal safe level of formaldehyde.,
+Moderate,0.21 - 0.4,"This level of formaldehyde indicates cleaning solutions are being used. If this level does not increase from this point due to cleaning, there will be no health concerns.",Detailed audit of ventilation setup to identify under-ventilation in specific areas or at specific times.
+Unhealthy for sensitive groups,0.41 - 0.6,"Formaldehyde levels have reached marginally unhealthy levels. Should this continue, the root cause for this rise in formaldehyde should be investigated and reduced.","Detailed audit of ventilation setup to identify under-ventilation in specific areas or at specific times.
+Source of pollutant should be investigated and identified"
+Unhealthy ,0.61 - 10,You have reached an unsafe level of formaldehyde readings in the time period shown. This could be caused by unsealed chemical containers that are impacting the air at this location. This should be investigated immediately before the levels rise to hazardous levels.,"Detailed audit of ventilation setup to identify under-ventilation in specific areas or at specific times.
+Source of pollutant should be investigated and identified"

@@ -1,0 +1,18 @@
+form.customer-selection-form{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form.customer-selection-form button{
+    float: right;
+}
+
+.login-action-container{
+    text-align: center;
+}
+
+.version-element{
+    font-size: 0.8rem;
+    color: gray;
+}

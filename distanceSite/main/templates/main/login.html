@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mike and Liz</title>
+
+    {% load static %}
+    <link rel="icon" href="{% static 'main/media/icons/heart.jpg' %}">
+    <link href="{% static 'main/vendor/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main/css/signin.css' %}" rel="stylesheet">
+
+</head>
+<input type="hidden" value="{{answer}}">
+<body class="text-center">
+<center>
+    <h1>Please Sign in By Answer The Question</h1>
+    <main class="form-signin">
+        <form>
+            <h5>{{question}}</h5>
+            <textarea style="resize:none;" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <br>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+      </form>
+    </main>
+</center>
+<footer>
+    <p class="mt-5 mb-3 text-muted">© 2021 INFINITELOVE Industries</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Qlair Dashboards</title>
+
+    {% load static %}
+    <link rel="icon" href="{% static 'main/media/icons/qlair_favicon.png' %}">
+    <link href="{% static 'main/vendor/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link href="{% static 'main/css/mobile_dashboard.css' %}" rel="stylesheet">
+    <style id="indoorSunStyle"></style>
+    <style id="outdoorSunStyle"></style>
+</head>
+<body>
+<div class="loading hide" id="loadingScreen"></div>
+<input id="facilityName" type="hidden" value="{{facility_name}}">
+<input id="macAddress" type="hidden" value="{{mac_address}}">
+<div class="hide">
+    Dashboard Unavailable
+</div>
+
+<center>
+    <img src="{% static 'main/media/icons/qlair_blue.png' %}" class="qlairLogo">
+    <hr width="80%" class="standardHR">
+    <div>
+        {{ facility_name }} {{ facility_address }} {{ facility_country }}
+    </div>
+    <div class="verticalCenter" id="indoorSunDiv">
+         <div class="sunbox">
+            <div class="indoorSun sunSizing">
+                <div class="contentCenter">
+                    <span id="indoorClass" class="pollutantClass"></span><br>
+                    <span id="indoorSelectedPoll" class="selectedPoll">Air Quality Index</span><br>
+                    <span class="selectedPoll">Indoor</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="verticalCenter hide" id="outdoorSunDiv">
+         <div class="sunbox">
+            <div class="outdoorSun sunSizing">
+                <div class="contentCenter">
+                    <span id="outdoorClass" class="pollutantClass"></span><br>
+                    <span id="outdoorSelectedPoll" class="selectedPoll">Air Quality Index</span><br>
+                    <span class="selectedPoll">Outdoor</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="indoorStats">
+        <img src="{% static 'main/media/icons/air_icon.png' %}" class="icon">
+        <div class="item">
+            <span class="iconText" id="indoorPollUnits"></span>
+            <span class="valueText caption" id="indoorValue"></span>
+        </div>
+        <img src="{% static 'main/media/icons/temperature.png' %}" class="icon">
+        <div class="item">
+            <span class="iconText">Temperature</span>
+            <span class="valueText caption" id="indoorTemp"></span>
+        </div>
+        <img src="{% static 'main/media/icons/humidity.png' %}" class="icon">
+        <div class="item">
+            <span class="iconText">Humidity</span>
+            <span class="valueText caption" id="indoorHum"></span>
+        </div>
+    </div>
+    <div id="outdoorStats" class="hide">
+        <img src="{% static 'main/media/icons/air_icon.png' %}" class="icon">
+        <div class="item">
+            <span class="iconText" id="outdoorPollUnits"></span>
+            <span class="valueText caption" id="outdoorValue"></span>
+        </div>
+        <img src="{% static 'main/media/icons/temperature.png' %}" class="icon">
+        <div class="item">
+            <span class="iconText">Temperature</span>
+            <span class="valueText caption" id="outdoorTemp"></span>
+        </div>
+        <img src="{% static 'main/media/icons/humidity.png' %}" class="icon">
+        <div class="item">
+            <span class="iconText">Humidity</span>
+            <span class="valueText caption" id="outdoorHum"></span>
+        </div>
+    </div>
+    <div class="container selectDiv">
+      <div class="row">
+        <div class="col">
+           <select id="pollSelect" class="selectText custom-select">
+              <option class="selectText">Air Quality Index</option>
+              <option class="selectText">Carbon Dioxide</option>
+              <option class="selectText">Organic Compounds</option>
+              <option class="selectText">Fine Dust Matter</option>
+              <option class="selectText">Coarse Dust Matter</option>
+              <option class="selectText">CAIRS Score</option>
+            </select>
+        </div>
+        <div id="outdoorBtnCol" class="col">
+          <button class="btn outdoorBtnText" id="toggleOutdoor">Show Outdoor</button>
+        </div>
+      </div>
+    </div>
+    <div class="learnMore">
+        <a href="#"><u>Learn More</u></a>
+    </div>
+</center>
+
+<script src="{% static 'main/javascript/mobile_sunstyling.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'main/vendor/js/bootstrap.bundle.min.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+</body>

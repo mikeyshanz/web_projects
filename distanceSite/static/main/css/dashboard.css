@@ -1,0 +1,75 @@
+.headerFont {color: black;}
+.icon {width: 3vw; padding-left: .5vw; padding-top: 2.8vh;}
+.iconText {color: black; font-size: 2vw;}
+.outdoorBtnText {color: white; font-size: 1vw; background-color: dodgerblue; border-radius:24px;}
+.outdoorBtnText:hover {
+    color: black;
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.qrCode {width: 7vw; position: absolute; right: 6px; bottom: 4vw;}
+.qlairLogo {width: 6vw; position: absolute; right: 10px; bottom: 10px;}
+.facilityInfo {color: black; font-size: 1.5vw; position: absolute; left: 18vw;}
+.dateInfo {color: black; font-size: 1.5vw; position: absolute; left: 58vw;}
+.selectStyle {float: left; padding-left: 2%;}
+.includeOutdoor {float: right; padding-right:2%;}
+.autoH1 {font-size: 3vw; padding-bottom: 12vh; color:black;}
+.autoH2 {font-size: 2vw; padding-bottom: 1.5vw;  color:black;}
+.selectText {font-size: 1vw; text-align-last:center; }
+.hide {display: none;}
+.contentCenter {
+    margin: 0;
+    position: absolute;
+    top: 18vw;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.selectWidth {width: 14vw; height: 3vw; border-radius:24px;}
+.pollutantClass {font-size: 3vw;}
+.selectedPoll {font-size: 1.2vw;}
+.scaleToPage {width: 10vw; height: 3vw;}
+.topSpace {
+    padding-top: 9vh;
+    width: 80vw;
+    margin-left: 4vw;
+}
+.iconSection {
+    padding-top: 6vw;
+    padding-bottom: 1vw;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  background-color: dodgerblue;
+  color: white;
+}
+.selectText:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    font-size: 1vw;
+}
+.caption {
+    display: block;
+}
+.blur {
+    filter: blur(10px);
+}
+.centerScreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 27vw;
+    top: 30vh;
+    z-index: 10000;
+    font-size: 5vw;
+}
+.squareBorder {
+  border-radius: 5px;
+  box-shadow: 0px 0px 60px -6px rgba(0,0,0,0.75);
+  margin: 2vw;
+}
